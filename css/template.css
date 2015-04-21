@@ -1,0 +1,209 @@
+
+
+/*  Main CSS */
+
+body 	{ 
+	font: 100%  Helvetica;
+	margin: 0; 
+	padding: 0;
+	text-align: center;
+	color: #666666;
+	background-color:#EBEBEB;
+}
+#wrapper { 
+	margin: 10px auto; 
+	max-width: 980px; 
+	width: 90%; 
+	background: #FFFFFF; 
+	padding: 10px 0; 
+}
+header 	{ 
+	padding: 3px; 
+}
+
+
+/* Text and fonts */
+
+body, .blog, .item-page {
+	font: 14px Geneva, sans-serif;
+}
+h1,.componentheading, .moduletable h3 {
+	color: black;
+	font: 15px Geneva, sans-serif;
+	margin-top: 0;
+	padding-bottom: 6px;
+	letter-spacing: 1.5px;
+}
+div.moduletable-titel h1 {
+	position: absolute;
+	top: 52px;
+	width: 64%!important;
+	border-bottom: 1px solid #E6E6E6;
+}
+h2, .contentheading{
+	color: black;
+	font: bold 15px "Helvetica Neue";
+	margin-top: 0;
+	margin-bottom: 0;
+}
+a:hover, a {
+	color: #66FFCC;
+}
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+p { 
+	padding: 0 5px 0 5px; 
+	margin-bottom: 10px; 
+}
+ul	{ 
+	list-style: none; 
+}
+ul li	{ 
+	margin: 0 5px; 
+}
+
+/* Navigation */ 
+
+nav	{ 
+	background: #fff; 
+	padding: 0; 
+	margin: 0 0 60px 0;
+	border-bottom: 1px dashed #404040;
+	height: 40px;
+}
+nav a	{ 
+	color: #000; 
+	display: block; 
+	float: left; 
+	padding: 10px; 
+	text-decoration:none;
+	font: 14px Geneva, sans-serif;
+	letter-spacing: 1.5px;
+}
+nav a:hover { 
+	text-decoration: none;  
+}
+nav a:active		{ 
+	position: relative; 
+	top: 0;
+}
+
+/*Maximenu*/
+
+div#maximenuck ul.maximenuck {
+	border: none;
+	font: 14px Geneva, sans-serif;
+	background: none!important;
+	
+}
+nav .last a {
+	margin-bottom: 0px!important;
+}
+
+
+div#maximenuck ul.maximenuck li.maximenuck ul.maximenuck2 li:hover > a,
+div#maximenuck ul.maximenuck li.maximenuck ul.maximenuck2 li:hover > h2 a,
+div#maximenuck ul.maximenuck li.maximenuck ul.maximenuck2 li:hover > h3 a,
+div#maximenuck ul.maximenuck li.maximenuck ul.maximenuck2 li.active > a,
+div#maximenuck ul.maximenuck2 li:hover > a,
+div#maximenuck ul.maximenuck2 li:hover > h2 a,
+div#maximenuck ul.maximenuck2 li:hover > h3 a,
+div#maximenuck ul.maximenuck2 li.active > a {
+	color: #000;
+}
+
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck:hover > a,
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck:hover > span,
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck.openck > a,
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck.clickedck > a,
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck.openck > span,
+div#maximenuck ul.maximenuck li ul.maximenuck2 li.maximenuck.clickedck > span {
+	color: #66FFCC;
+	background: #fff;
+}
+/*Social Media buttons*/
+
+.fbt {
+	position: absolute;
+	top: 0px;
+	left: 770px;
+	z-index: 1000;
+}
+
+/* Lay-out */
+
+#content { 
+	
+}
+.main {
+	width: 70%; 
+	float: left; 
+}
+.sidebar { 
+	width: 20%; 
+	float: left; 
+	margin-bottom: 10px; 
+	padding: 5px; 
+}
+
+footer 	{ 
+	padding: 5px; 
+	background:#DDDDDD;
+}
+
+/* Miscellaneous */
+
+.clearfix { 
+	clear: both; 
+}
+
+fieldset {
+	border: none;
+}
+
+.contact {
+	text-align: left;
+	
+}
+/*Media queries*/
+
+/* smaller than an iPhone */
+@media screen and (max-width: 478px) 	{
+	h1 { font-size: 20px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 13px; }
+}
+
+/* iPhone Portrait */
+@media screen and (max-width: 480px) {
+	h1 { font-size: 30px; padding: 1px; }
+	h2 { font-size: 13px; padding: 1px; }
+	body { font-size: 10px; }
+	.sidebar {display: none;}
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+}
+
+/* tablet landscape */
+@media screen and (max-width: 768px) 	{
+	#main-content { width: 100%; }
+	.sidebar { width: 100%; }
+}
+
+
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+} 
