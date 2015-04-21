@@ -88,10 +88,35 @@ $doc->setGenerator($sitename);
 <jdoc:include type="head" /></head>
 
 	<body>
-		<jdoc:include type="modules" name="breadcrumbs" />
-		<jdoc:include type="modules" name="search" />
-		<jdoc:include type="message" />
-		<jdoc:include type="component" />
-		<jdoc:include type="modules" name="debug" />
+		<div id="wrapper">
+		
+		<header>
+			
+			<nav>
+				<jdoc:include type="modules" name="menu" />
+				<div class="clearfix"></div>
+			</nav>	
+		</header>
+				<aside class="sidebar">
+						<jdoc:include type="modules" name="left" />	
+				</aside>
+		<section id="content">
+			<section class="main">
+			<jdoc:include type="modules" name="breadcrumbs" />
+			<jdoc:include type="modules" name="search" />
+			<jdoc:include type="message" />
+			<jdoc:include type="component" />
+		</section>	
+		
+		<div class="clearfix"></div>
+			
+		</section>	
+		
+		<footer>
+			<jdoc:include type="modules" name="footer" />
+			<jdoc:include type="modules" name="debug" />
+		</footer>		
+		
+		</div> 
 	</body>
 </html>
